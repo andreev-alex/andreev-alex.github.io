@@ -232,3 +232,25 @@ img {
 .card-description {
     color: var(--text-secondary);
 }
+
+@media (max-width: 600px) { 
+    .page-content {
+        margin: 30px auto;
+        padding: 50px 30px;
+    }
+    .tab-content-grid {
+        grid-template-columns: auto;
+    }
+    .about-header img {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+    .about-header .btn {
+        margin-top: 8px;
+        margin-left: 0;
+    }
+    .nav-link {
+        margin-right: 0;
+        padding: 12px;
+    }
+ }

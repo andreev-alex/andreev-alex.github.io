@@ -197,6 +197,10 @@ img {
     margin-bottom: 0;
 }
 
+#pills-speaking .tab-content-grid {
+    margin-bottom: 0;
+}
+
 .card {
     display: flex;
     flex-direction: column;

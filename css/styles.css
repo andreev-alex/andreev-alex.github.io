@@ -212,7 +212,7 @@ img {
 
 .card-simple {
     background-color: var(--ui-gray-100);
-    padding: 16px;
+    padding: 16px 24px;
     border-radius: 12px;
     margin-bottom: 20px;
 }

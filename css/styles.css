@@ -218,6 +218,21 @@ img {
     border-radius: 12px;
 }
 
+.card-simple {
+    background-color: var(--ui-gray-100);
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.card-simple:last-child {
+    margin-bottom: 0;
+}
+
+.card-simple .card-title {
+    margin-bottom: 0;
+}
+
 .card-badge {
     display: block;
     color: var(--text-secondary);

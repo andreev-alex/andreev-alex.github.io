@@ -151,11 +151,20 @@ img {
     flex-wrap: wrap;
     padding: 0;
     margin: 0 0 24px 0;
-    border-bottom: 1px solid var(--ui-gray-200);
+    /* border-bottom: 1px solid var(--ui-gray-200); */
 }
 
+
 .nav-link {
-    color: var(--text-secondary);
+    margin-right: 12px;
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: var(--ui-white);
+    border: 1px solid var(--ui-gray-200);
+    border-radius: 8px;
+    transition: background-color 200ms ease-in-out;
+    cursor: pointer;
+    /* color: var(--text-secondary);
     font-family: inherit;
     font-weight: 400;
     font-size: 14px;
@@ -166,18 +175,21 @@ img {
     margin-right: 32px;
     cursor: pointer;
     padding: 0 0 8px 0;
-    transition: color 150ms ease-in;
+    transition: color 150ms ease-in; */
 }
 
 .nav-link:hover {
+    background-color: var(--ui-gray-100);
     color: var(--text-primary);
-    border-bottom: 1px solid var(--text-primary);
+    /* border-bottom: 1px solid var(--text-primary); */
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    color: var(--text-primary);
-    border-bottom: 1px solid var(--text-primary);
+    background-color: var(--ui-gray-100);
+    /* border-bottom: none; */
+    /* color: var(--text-primary);
+    border-bottom: 1px solid var(--text-primary); */
 }
 
 .tab-content>.tab-pane {
@@ -274,7 +286,7 @@ img {
         margin-left: 0;
     }
 
-    .nav-pills {
+    /* .nav-pills {
         border-bottom: 0;
     }
 
@@ -295,5 +307,5 @@ img {
     .nav-pills .show>.nav-link {
         background-color: var(--ui-gray-100);
         border-bottom: none;
-    }
+    } */
 }

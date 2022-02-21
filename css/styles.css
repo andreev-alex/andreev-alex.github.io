@@ -298,6 +298,10 @@ img {
         grid-template-columns: auto;
     }
 
+    #pills-contacts .tab-content-grid {
+        grid-template-columns: auto;
+    }
+
     .about-header img {
         margin-bottom: 8px;
     }

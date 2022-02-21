@@ -159,6 +159,7 @@ img {
     margin-right: 12px;
     margin-bottom: 8px;
     padding: 8px;
+    color: var(--text-secondary);
     background-color: var(--ui-white);
     border: 1px solid var(--ui-gray-200);
     border-radius: 8px;
@@ -180,13 +181,14 @@ img {
 
 .nav-link:hover {
     background-color: var(--ui-gray-100);
-    color: var(--text-primary);
+    /* color: var(--text-primary); */
     /* border-bottom: 1px solid var(--text-primary); */
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     background-color: var(--ui-gray-100);
+    color: var(--text-primary);
     /* border-bottom: none; */
     /* color: var(--text-primary);
     border-bottom: 1px solid var(--text-primary); */

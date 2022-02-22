@@ -35,8 +35,8 @@
     color: var(--text-primary);
     font-family: "Switzer", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 23px;
     letter-spacing: 0.01em;
 }
 
@@ -69,7 +69,7 @@ img {
 
 .page-content {
     background-color: var(--ui-white);
-    max-width: 640px;
+    max-width: 800px;
     margin: 110px auto;
     padding: 60px 40px;
     box-shadow: var(--shadow);
@@ -78,19 +78,14 @@ img {
 
 .header-title {
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
+    font-size: 20px;
+    line-height: 26px;
     margin-top: 0;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .header-description {
     color: var(--text-secondary);
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.01em;
-    margin-bottom: 2px;
 }
 
 .about {
@@ -105,7 +100,8 @@ img {
 }
 
 .about-header img {
-    margin-right: 12px;
+    margin-right: 16px;
+    border-radius: 50%;
 }
 
 .about-header .btn {
@@ -117,10 +113,12 @@ img {
     color: var(--text-secondary);
     border: 1px solid var(--ui-gray-200);
     border-radius: 8px;
-    font-size: 14px;
-    line-height: 20px;
     letter-spacing: 0.01em;
     transition: background-color 200ms ease-in-out;
+}
+
+.about-header-content {
+    align-self: center;
 }
 
 .about-header .btn:hover {
@@ -136,12 +134,6 @@ img {
     margin-right: 4px;
 }
 
-.content-text {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.01em;
-}
-
 .nav-pills {
     list-style: none;
     display: flex;
@@ -152,9 +144,11 @@ img {
 
 
 .nav-link {
+    font-size: 16px;
+    line-height: 23px;
     margin-right: 12px;
     margin-bottom: 8px;
-    padding: 8px;
+    padding: 8px 12px;
     color: var(--text-secondary);
     background-color: var(--ui-white);
     border: 1px solid var(--ui-gray-200);
@@ -184,7 +178,7 @@ img {
 .tab-content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 24px;
     margin-bottom: 32px;
 }
 
@@ -202,12 +196,49 @@ img {
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: var(--ui-gray-100);
-    padding: 24px 16px 0 24px;
-    border-radius: 12px;
+    border-radius: 20px;
+}
+
+.card-description {
+    color: var(--text-secondary);
+}
+
+.card-body {
+    padding: 16px 16px 24px 16px;
+}
+
+.card-title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.card-subtitle {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 12px;
+}
+
+.card-text {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.card img {
+    border-radius: 20px 20px 0 0;
+    background-color: var(--ui-gray-200);
+    filter: grayscale(1);
+    transition: filter 250ms ease-in-out;
+}
+
+.card img:hover {
+    filter: grayscale(0);
 }
 
 .card-simple {
@@ -215,15 +246,6 @@ img {
     padding: 16px 24px;
     border-radius: 12px;
     margin-bottom: 20px;
-}
-
-.card-outline {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--ui-gray-100);
-    padding: 24px 16px 0 24px;
-    border-radius: 12px;
 }
 
 .card-simple:last-child {
@@ -261,17 +283,6 @@ img {
     margin-bottom: 8px;
 }
 
-.card-title {
-    display: block;
-    color: var(--text-primary);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0.01em;
-    margin-bottom: 12px;
-    margin-top: 0;
-}
-
 .card-footer {
     border-top: 1px solid var(--ui-gray-200);
 }
@@ -283,12 +294,20 @@ img {
     text-align: center;
 }
 
-.card-description {
-    color: var(--text-secondary);
-    margin-bottom: 16px;
+.card-outline {
+    background-color: var(--ui-gray-100);
+    padding: 24px 16px 0 24px;
+    border-radius: 12px;
+}
+
+.card-outline .card-title {
+    margin-bottom: 12px;
 }
 
 @media (max-width: 600px) {
+    .nav-link {
+        margin-bottom: 12px;
+    }
     .page-content {
         margin: 30px auto;
         padding: 50px 30px;
@@ -309,5 +328,8 @@ img {
     .about-header .btn {
         margin-top: 8px;
         margin-left: 0;
+    }
+    .card img {
+        filter: none;
     }
 }

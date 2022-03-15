@@ -108,7 +108,7 @@ img {
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding: 4px 8px;
+    padding: 6px 10px;
     background-color: var(--ui-white);
     color: var(--text-secondary);
     border: 1px solid var(--ui-gray-200);
@@ -129,7 +129,7 @@ img {
     display: block;
     width: 16px;
     height: 16px;
-    background-image: url(../images/ic_download_24x24.svg);
+    background-image: url(../images/ic-doc.svg);
     background-repeat: no-repeat;
     margin-right: 4px;
 }

@@ -1,335 +1,255 @@
 :root {
-    /* Colors UI */
-    --ui-white: #ffffff;
-    --ui-gray-100: #F5F5F5;
-    --ui-gray-200: #DCDCDC;
-    --ui-gray-300: #A9A9A9;
-    --ui-lightblue: #F0F2F5;
-    --ui-blue-100: #0A72FE;
-    --ui-blue-200: #0044F2;
-    /* Colors text */
-    --text-primary: #0C131D;
-    --text-secondary: #555555;
-    /* Effects */
-    --shadow: 0px 1px 10px rgba(190, 192, 201, 0.15);
+    --basic-white: #ffffff;
+    --text-primary: #1d1d1f;
+    --text-secondary: #848485;
+    --blue-100: #2589FF;
+    --gray-100: #F5F5F7;
 }
 
-@font-face {
-    font-family: "Switzer";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/Switzer-Regular.woff2") format("woff2");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Switzer";
-    font-style: normal;
-    font-weight: 600;
-    src: url("../fonts/Switzer-Semibold.woff2") format("woff2");
-    font-display: swap;
-}
-
-.body {
-    background-color: #F5F6F7;
-    color: var(--text-primary);
-    font-family: "Switzer", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: 0.01em;
-}
-
-a {
-    color: var(--ui-blue-100);
-    text-decoration: none;
-    transition: color 300ms ease-in-out;
-}
-
-a:hover {
-    color: var(--ui-blue-200);
-}
-
-p {
-    padding: 0;
-    margin: 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+.html {
+    height: 100%;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.page-content {
-    background-color: var(--ui-white);
-    max-width: 800px;
-    margin: 110px auto;
-    padding: 60px 40px;
-    box-shadow: var(--shadow);
-    border-radius: 32px;
+img {
+  max-width: 100%;
+  object-fit: contain;
+  border-style: none;
 }
 
-.header-title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 26px;
-    margin-top: 0;
-    margin-bottom: 2px;
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--basic-white);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
 }
 
-.header-description {
-    color: var(--text-secondary);
+.body-container {
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
-.about {
-    margin-bottom: 24px;
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-.about-header {
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    margin-bottom: 24px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9e9e9;
+    background-color: hsla(0,0%,100%,.8);
+    backdrop-filter: blur(20px);
+    z-index: 2;
+    padding: 10px
+     40px;
+    font-size: 12px;
 }
 
-.about-header img {
-    margin-right: 16px;
-    border-radius: 50%;
-}
-
-.about-header .btn {
+.nav .nav-list {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    padding: 6px 10px;
-    background-color: var(--ui-white);
-    color: var(--text-secondary);
-    border: 1px solid var(--ui-gray-200);
-    border-radius: 8px;
-    letter-spacing: 0.01em;
-    transition: background-color 200ms ease-in-out;
 }
 
-.about-header-content {
-    align-self: center;
-}
-
-.about-header .btn:hover {
-    background-color: var(--ui-gray-100);
-}
-
-.ic-download {
+.nav-brand, .nav-item {
     display: block;
-    width: 16px;
-    height: 16px;
-    background-image: url(../images/ic-doc.svg);
-    background-repeat: no-repeat;
-    margin-right: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    color: var(--text-primary);
 }
 
-.nav-pills {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+.nav-item {
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
+}
+
+.nav-item:hover {
+    opacity: .7;
+}
+
+.nav-brand {
     padding: 0;
-    margin: 0 0 32px 0;
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
 }
 
+.nav-brand:hover {
+    opacity: .7;
+}
 
-.nav-link {
-    font-size: 16px;
-    line-height: 23px;
-    margin-right: 12px;
-    padding: 8px 12px;
-    color: var(--text-secondary);
-    background-color: var(--ui-white);
-    border: 1px solid var(--ui-gray-200);
-    border-radius: 12px;
+.nav-item-primary {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: 8px;
+    background-color: var(--blue-100);
+    color: var(--basic-white);
+    border-radius: 25px;
     transition: background-color 200ms ease-in-out;
-    cursor: pointer;
+    opacity: 1;
 }
 
-.nav-link:hover {
-    background-color: var(--ui-gray-100);
+.nav-item-primary:hover {
+    background-color: #2181ee;
+    opacity: 1;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background-color: var(--ui-gray-100);
-    color: var(--text-primary);
-}
-
-.tab-content>.tab-pane {
-    display: none;
-}
-
-.tab-content>.active {
+.ic-file-text {
     display: block;
+    width: 20px;
+    height: 20px;
 }
 
-.tab-content-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    margin-bottom: 32px;
+.main {
+    margin-bottom: 100px;
 }
 
-#pills-writing .tab-content-grid {
-    margin-bottom: 0;
-}
-
-#pills-contacts .tab-content-grid {
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 0;
-}
-
-#pills-speaking .tab-content-grid {
-    margin-bottom: 0;
-}
-
-.card {
-    background-color: var(--ui-gray-100);
-    border-radius: 20px;
-}
-
-.card-description {
-    color: var(--text-secondary);
-}
-
-.card-body {
-    padding: 16px 16px 24px 16px;
-}
-
-.card-title {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 4px;
-}
-
-.card-subtitle {
+.footer {
     display: block;
-    color: var(--text-secondary);
-    font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 12px;
-}
-
-.card-text {
-    color: var(--text-secondary);
-    font-size: 16px;
-    line-height: 23px;
-}
-
-.card img {
-    min-height: 180px;
-    border-radius: 20px 20px 0 0;
-    background-color: var(--ui-gray-200);
-    filter: grayscale(1);
-    transition: filter 250ms ease-in-out;
-}
-
-.card img:hover {
-    filter: grayscale(0);
-}
-
-.card-simple {
-    background-color: var(--ui-gray-100);
-    padding: 16px 24px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-.card-simple:last-child {
-    margin-bottom: 0;
-}
-
-.card-simple .card-title {
-    margin-bottom: 0;
-}
-
-#pills-contacts .card-simple {
-    margin-bottom: 0;
-}
-
-#pills-contacts .card-simple a {
-    color: var(--text-primary);
-}
-
-#pills-contacts .card-simple a:hover {
-    color: var(--ui-blue-100);
-}
-
-#pills-contacts .card-simple .card-title {
-    margin-bottom: 12px;
-}
-
-.card-badge {
-    display: block;
-    color: var(--text-secondary);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.01em;
-    margin-bottom: 8px;
-}
-
-.card-footer {
-    border-top: 1px solid var(--ui-gray-200);
-}
-
-.card-footer-link {
-    color: var(--text-primary);
-    display: block;
-    padding: 16px;
+    padding: 40px;
+    margin-top: auto;
     text-align: center;
 }
 
-.card-outline {
-    background-color: var(--ui-gray-100);
-    padding: 24px 16px 0 24px;
-    border-radius: 12px;
+a {
+    text-decoration: none;
+    transition: color 250ms ease-in-out;
 }
 
-.card-outline .card-title {
-    margin-bottom: 12px;
+.header {
+    margin-top: 35vh;
+    margin-bottom: 100px;
 }
 
-@media (max-width: 600px) {
-    .nav-link {
-        margin-bottom: 12px;
-    }
-    .page-content {
-        margin: 30px auto;
-        padding: 50px 30px;
-    }
+.header .main-title {
+    max-width: 35ch;
+    margin: 0 auto 20px;
+    font-size: 38px;
+    line-height: 44px;
+    font-weight: 700;
+    text-align: center;
+}
 
-    .tab-content-grid {
-        grid-template-columns: auto;
-    }
+.header .subtitle {
+    max-width: 84ch;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.4;
+}
 
-    #pills-contacts .tab-content-grid {
-        grid-template-columns: auto;
-    }
+.link {
+    color: var(--text-secondary);
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
+}
 
-    .about-header img {
-        margin-bottom: 8px;
-    }
+.link:hover {
+    opacity: .8;
+}
 
-    .about-header .btn {
-        margin-top: 8px;
-        margin-left: 0;
+.projects-list {
+    display: flex;
+    row-gap: 40px;
+    flex-direction: column;
+}
+
+.project-item {
+    display: block;
+    background-color: var(--gray-100);
+    border-radius: 50px;
+    padding: 50px;
+}
+
+.project-item .preview-title {
+    color: var(--text-primary);
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-item .preview-text {
+    color: var(--text-primary);
+    max-width: 48ch;
+    margin: 0;
+}
+
+.project-link {
+    display: block;
+    width: 100%;
+    margin-top: 32px;
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
+
+.project-link:hover {
+    opacity: .8;
+    transform: scale(1.005);
+}
+
+.project-image {
+    border-radius: 25px;
+}
+
+.company-link {
+    width: 100%;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.company-logo {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.color-invert {
+    filter: invert(100%);
+}
+
+@media (min-width: 1920px) {
+    .nav {
+        justify-content: space-around;
     }
-    .card img {
-        filter: none;
+    .header {
+        margin-top: 15vh;
+    }
+}
+
+@media (max-width: 1280px) {
+    .body-container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-list {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .nav-brand {
+        display: none;
     }
 }

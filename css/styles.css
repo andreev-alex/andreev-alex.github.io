@@ -257,7 +257,10 @@ a {
         text-align: center;
     }
     .nav {
-        padding: 20px;
+        padding: 10px;
+    }
+    .nav-item-primary {
+        margin-left: 0;
     }
     .schedule-call {
         display: none;
@@ -271,8 +274,8 @@ a {
         display: none;
     }
     .project-item {
-        padding: 25px;
-        border-radius: 25px;
+        padding: 30px;
+        border-radius: 30px;
     }
     .project-image {
         object-fit: cover;

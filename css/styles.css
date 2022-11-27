@@ -516,6 +516,9 @@ a {
     .nav {
         justify-content: center;
         row-gap: 12px;
+        background-color: var(--white);
+        backdrop-filter: none;
+        opacity: 1;
     }
 
     .nav-brand {
@@ -565,9 +568,6 @@ a {
     }
     .nav-item {
         padding: 10px 12px;
-    }
-    #schedule {
-        display: none;
     }
     .container {
         padding-left: 16px;

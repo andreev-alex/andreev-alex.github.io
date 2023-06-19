@@ -239,7 +239,7 @@
  }
  
  .header .header-subtitle {
-    max-width: 100ch;
+    max-width: 75ch;
     line-height: 1.5;
     margin: 0 auto;
  }

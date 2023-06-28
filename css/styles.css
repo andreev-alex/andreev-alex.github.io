@@ -138,6 +138,7 @@
     font-size: 12px;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 25px;
     z-index: 3;
     margin: 0 auto;
@@ -184,6 +185,10 @@
     border-radius: 16px;
     transition: background-color 200ms ease-in-out;
  }
+
+ .nav-item-primary .ic {
+   transform: rotate(15deg);
+ }
  
  .nav-item-primary:hover {
     background-color: rgba(37, 137, 255, 0.2);
@@ -195,6 +200,10 @@
     margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
+ }
+
+ .link-flat .ic {
+   transform: none;
  }
  
  .ic {
@@ -524,7 +533,6 @@
  
  @media (max-width: 992px) { 
     .nav {
-        justify-content: center;
         row-gap: 12px;
         background-color: var(--white);
         backdrop-filter: none;
@@ -533,6 +541,10 @@
   }
  
  @media (max-width: 768px) {
+
+   .nav {
+      justify-content: center;
+   }
  
     .nav-brand {
        font-weight: 500;

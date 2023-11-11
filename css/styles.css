@@ -294,14 +294,14 @@ a {
 	color: var(--text-primary);
 }
 
-.header-img {
+/* .header-img {
 	width: 100%;
 	z-index: -1;
 	height: 75vh;
 	position: absolute;
 	top: 0;
 	left: 0;
-}
+} */
 
 .header .tags-group {
 	justify-content: center;

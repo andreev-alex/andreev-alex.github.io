@@ -9,7 +9,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta name="language" content="English">
       <meta name="author" content="Alex Andreev">
-      <title>Alex - Lead UX/UI Product Designer | Crafting Intuitive Interfaces for 73M+ Users Worldwide</title>
+      <title>Alex - Designer who making digital banking friendly for 73M+ users worldwide</title>
       <!-- Hotjar Tracking Code -->
       <script>
          (function(h,o,t,j,a,r){
@@ -21,6 +21,34 @@
             a.appendChild(r);
          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
       </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Smooth scroll -->
+      <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+      
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+      </script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -29,18 +57,18 @@
    </head>
    <body class="body">
       <nav class="nav">
-         <a class="nav-brand" href="#"><span class="ic ic-uae"></span>Alex Andreev · Lead UX/UI Product Designer</a>
+         <a class="nav-brand" href="#welcome"><span class="ic ic-uae"></span>Alex Andreev · Lead UX/UI Product Designer</a>
          <ul class="nav-list">
-            <li><a class="nav-item" href="https://www.linkedin.com/in/andreevv-alex/" target="_blank">LinkedIn</a></li>
-            <!-- <li><a class="nav-item" href="about.html">About Alex</a></li> -->
+            <li><a class="nav-item" href="#work">Work</a></li>
+            <li><a class="nav-item" href="#updates">Updates</a></li>
+            <li><a class="nav-item" href="#about">About</a></li>
+            <li><a class="nav-item" href="#contacts">Contacts</a></li>
             <li>
-               <a class="nav-item nav-item-primary" href="https://drive.google.com/file/d/1omhYDGYD0RgfQiNuQrxDYYhW61saOZz8/view?usp=sharing" target="_blank">
-               <img class="ic" src="/img/icons/ic-file-text.svg" alt="Document icon." />Open Resume
-               </a>
+               <a class="nav-item" href="https://drive.google.com/file/d/1omhYDGYD0RgfQiNuQrxDYYhW61saOZz8/view?usp=sharing" target="_blank">Open Resume</a>
             </li>
          </ul>
       </nav>
-      <header class="header container">
+      <header class="header container" id="welcome">
          <h1 class="header-title">
             Designer who making digital banking friendly for 73M+ users worldwide
          </h1>
@@ -53,7 +81,7 @@
          </div>
       </header>
       <main class="main">
-         <section class="projects">
+         <section class="projects" id="work">
             <ul class="projects-list">
                <li class="project-item project-item-sber">
                   <a class="project-link" href="https://www.behance.net/gallery/142225851/Federal-Banks-Reward-Program" target="_blank">
@@ -65,7 +93,7 @@
                         <div class="tag">2022</div>
                      </div>
                      <p class="project-description">More than 73 million clients of Sberbank in Eastern Europe purchase goods and services through digital banking. Rewards program 'Sber Spasibo' is a way to save some money on that</p>
-                     <img class="project-cover" src="/img/projects/covers/project-cover-sber.webp" alt="">
+                     <img class="project-cover" src="/img/projects/covers/project-cover-sber.webp" alt="Sber Spasibo - rewards program for 73 million customers in Eastern Europe.">
                   </a>
                </li>
                <li class="project-item project-item-qic-reads">
@@ -90,29 +118,7 @@
                         <div class="tag tag-gray">2021</div>
                      </div>
                      <p class="project-description">'Careerum' connecting professionals globally and facilitating over 400 job offers in leading companies across 28 countries</p>
-                     <img class="project-cover" src="/img/projects/covers/project-cover-social-careerum-alernative.webp" alt="">
-                  </a>
-               </li>
-               <li class="project-item project-item-design-process">
-                  <a class="project-link" href="https://www.linkedin.com/pulse/how-design-process-helps-develop-insurance-products-qatar-rfwzf/?trackingId=Uq1of1QPTd6x2OkruviCeg%3D%3D" target="_blank">
-                     <h2 class="project-title">Design Process for an insurance product developing in Qatar and the UAE</h2>
-                     <div class="tags-group">
-                        <div class="tag tag-gray">Article</div>
-                        <div class="tag tag-gray">2024</div>
-                     </div>
-                     <p class="project-description">Gain insights into the establishment of an end-to-end design process within QIC, fostering effective collaboration and streamlining the development of large-scale digital products and features, as detailed by Alex Andreev</p>
-                     <img class="project-cover" src="/img/projects/covers/project-cover-design-process.webp" alt="">
-                  </a>
-               </li>
-               <li class="project-item project-item-qic-connect">
-                  <a class="project-link" href="https://www.linkedin.com/pulse/how-qic-connect-web-design-system-streamlining-digital-product-m0onf/?trackingId=bOVTEMDjQRO97niA%2BdN%2B6A%3D%3D" target="_blank">
-                     <h2 class="project-title">Design System 'QIC-Connect'</h2>
-                     <div class="tags-group">
-                        <div class="tag tag-gray">Article</div>
-                        <div class="tag tag-gray">2023</div>
-                     </div>
-                     <p class="project-description">Explore how the 'QIC Connect' design system is reshaping digital product development in Qatar and the UAE, as revealed by Alex Andreev</p>
-                     <img class="project-cover" src="/img/projects/covers/project-cover-qic-connect.webp" alt="">
+                     <img class="project-cover" src="/img/projects/covers/project-cover-social-careerum.webp" alt="">
                   </a>
                </li>
                <li class="project-item project-item-rosbank">
@@ -130,9 +136,78 @@
                </li>
             </ul>
          </section>
+         <section class="updates" id="updates">
+            <h2 class="section-title">Recent highlights</h2>
+            <ul class="articles-list">
+               <li class="project-item project-item-highlight">
+                  <a class="project-link" href="https://www.linkedin.com/pulse/how-qic-connect-web-design-system-streamlining-digital-product-m0onf/?trackingId=bOVTEMDjQRO97niA%2BdN%2B6A%3D%3D" target="_blank">
+                     <h2 class="project-title">Design System 'QIC-Connect'</h2>
+                     <div class="tags-group">
+                        <div class="tag tag-gray">Article</div>
+                        <div class="tag tag-gray">2023</div>
+                     </div>
+                     <p class="project-description">Explore how the 'QIC Connect' design system is reshaping digital product development in Qatar and the UAE, as revealed by Alex Andreev</p>
+                     <!-- <img class="project-cover" src="/img/projects/covers/project-cover-qic-connect.webp" alt=""> -->
+                  </a>
+               </li>
+               <li class="project-item project-item-highlight">
+                  <a class="project-link" href="https://www.linkedin.com/pulse/how-design-process-helps-develop-insurance-products-qatar-rfwzf/?trackingId=Uq1of1QPTd6x2OkruviCeg%3D%3D" target="_blank">
+                     <h2 class="project-title">Design Process for an insurance product developing in Qatar and the UAE</h2>
+                     <div class="tags-group">
+                        <div class="tag tag-gray">Article</div>
+                        <div class="tag tag-gray">2024</div>
+                     </div>
+                     <p class="project-description">Gain insights into the establishment of an end-to-end design process within QIC, fostering effective collaboration and streamlining the development of large-scale digital products and features, as detailed by Alex Andreev</p>
+                     <!-- <img class="project-cover" src="/img/projects/covers/project-cover-design-process.webp" alt=""> -->
+                  </a>
+               </li>
+               <li class="project-item project-item-highlight">
+                  <a class="project-link" href="https://medium.com/@andreevv.aleksandr/who-is-a-product-ux-ui-designer-and-what-does-he-really-do-a717f8588638" target="_blank">
+                     <h2 class="project-title">Who is a product UX/UI designer and what does he really do?</h2>
+                     <div class="tags-group">
+                        <div class="tag tag-gray">Article</div>
+                        <div class="tag tag-gray">2022</div>
+                     </div>
+                     <p class="project-description">When people ask me what I do, I answer that I am a designer. At this point, most people understand this as some kind of visual work on the design of something, but in this article, I would like to disprove this notion and talk about the real work that a UX / UI product designer does</p>
+                     <!-- <img class="project-cover" src="/img/projects/covers/project-cover-design-process.webp" alt=""> -->
+                  </a>
+               </li>
+               <li class="project-item project-item-highlight">
+                  <a class="project-link" href="https://bootcamp.uxdesign.cc/why-should-a-digital-product-designer-use-metrics-4e43e86ef7c4" target="_blank">
+                     <h2 class="project-title">Why should a Digital Product Designer use Metrics?</h2>
+                     <div class="tags-group">
+                        <div class="tag tag-gray">Article</div>
+                        <div class="tag tag-gray">2023</div>
+                     </div>
+                     <p class="project-description">As a Product Designer, one of the most important aspects of creating a successful Digital Product is understanding how users interact with it. This is where product metrics come in. By analyzing metrics such as User Engagement, Conversion Rates, and User Feedback, Product Designers can gain valuable insights into how to improve their digital products</p>
+                     <!-- <img class="project-cover" src="/img/projects/covers/project-cover-design-process.webp" alt=""> -->
+                  </a>
+               </li>
+            </ul>
+         </section>
+         <section class="about" id="about">
+            <h2 class="section-title">About Alex</h2>
+            <iframe class="video" src="https://www.youtube.com/embed/MwmQ8yjjcyQ?si=FqaoheJ_50ovZJD_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </section>
+         <section class="contacts" id="contacts">
+            <div class="contacts-inner-wrapper">
+               <h2 class="section-title">Contacts</h2>
+               <ul class="contacts-list">
+                  <li class="contact-item"><a class="contact-link" href="mailto:andreevv.inbox@gmail.com">andreevv.inbox@gmail.com</a></li>
+                  <li class="contact-item"><a class="contact-link" href="https://www.linkedin.com/in/andreevv-alex/" target="_blank">LinkedIn</a></li>
+                  <li class="contact-item"><a class="contact-link" href="https://drive.google.com/file/d/1omhYDGYD0RgfQiNuQrxDYYhW61saOZz8/view" target="_blank">Resume</a></li>
+                  <li class="contact-item"><a class="contact-link" href="#nowhere" target="_blank">Book a call via Calendly</a></li>
+               </ul>
+            </div>
+         </section>
       </main>
       <footer class="footer">
          <p class="footer-copy">© 2024, Alex Andreev</p>
       </footer>
+      <!-- Calendly badge widget begin -->
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/andreevv-alex/meeting-with-alex-in-google-meet', text: 'Schedule time with Alex', color: '#1c1c1c', textColor: '#ffffff', branding: undefined }); }</script>
+      <!-- Calendly badge widget end -->
    </body>
 </html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="As a seasoned Lead Product Designer, Alex specializes in crafting intuitive interfaces for digital banking, ensuring usability and visual appeal. With a track record of success, Alex has designed interfaces for large-scale products, including Eastern Europe's largest rewards program, benefiting over 73 million users. Currently leading a team at Qatar Insurance Company, Alex continues to drive innovation in interface design.">
+      <meta name="keywords" content="Product Design, User Interface Design, Mobile App Design, Web App Design, Finance UX, Insurance UX, Usability Testing, Design Systems, Visual Design, Interaction Design, User-Centered Design, Prototyping, Wireframing, Figma, Team Leadership, Mentorship, Cross-Platform Design, Responsive Design, Accessibility, UI">
+      <meta name="robots" content="index, follow">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="language" content="English">
+      <meta name="author" content="Alex Andreev">
+      <title>Alex - Designer who making digital banking friendly for 73M+ users worldwide</title>
+      <!-- Hotjar Tracking Code -->
+      <script>
+         (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:4946047,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      </script>
+      <link rel="icon" href="img/metadata/favicon.png" />
+      <link rel="stylesheet" href="css/styles.css" />
+   </head>
+   <body class="body">
+      <nav class="nav">
+         <a class="nav-brand" href="index.html"><span class="ic ic-avatar"></span>Alex Andreev · Lead UX/UI Product Designer</a>
+         <ul class="nav-list">
+            <li>
+               <a class="nav-item" href="https://drive.google.com/file/d/1omhYDGYD0RgfQiNuQrxDYYhW61saOZz8/view?usp=sharing" target="_blank">Resume</a>
+            </li>
+         </ul>
+      </nav>
+      <header class="header container">
+         <h1 class="header-title">
+            Please enter a password
+         </h1>
+         <p class="header-subtitle">If you need assistance or access, don't hesitate to reach out to me via <a class="inline-link" href="https://www.linkedin.com/in/andreevv-alex/" target="_blank">LinkedIn</a></p>
+      </header>
+      <main class="main container">
+         <form class="form-login" id="loginForm">
+            <label for="password"></label>
+            <input class="form-input" type="password" id="password" name="password" placeholder="Enter password"><br><br>
+            <button class="btn btn-submit" type="button" onclick="checkPassword()">Explore →</button>
+         </form>
+         <script>
+            // Function to handle login
+            function checkPassword() {
+                var password = document.getElementById('password').value;
+            
+                // Check if password matches 'showmedesign'
+                if (password === 'showmedesign') {
+                    // Redirect to protected page
+                    window.location.href = 'policy-management.html';
+                } else {
+                    alert('Incorrect password');
+                }
+            }
+            
+            // Add event listener for 'Enter' key press
+            document.getElementById("password").addEventListener("keyup", function(event) {
+                if (event.key === "Enter") {
+                    // Call function to check password
+                    checkPassword();
+                }
+            });
+            
+            // Check if password has been previously stored
+            window.onload = function() {
+                if (localStorage.getItem('storedPassword')) {
+                    document.getElementById('password').value = localStorage.getItem('storedPassword');
+                    checkPassword(); // Automatically attempt login using stored password
+                }
+            };
+            
+            // Save password to localStorage when login is successful
+            function savePassword() {
+                var password = document.getElementById('password').value;
+                localStorage.setItem('storedPassword', password);
+            }
+            
+            // Add event listener to login button to save password
+            document.querySelector('button').addEventListener('click', function() {
+                savePassword();
+                checkPassword(); // Check password after saving
+            });
+         </script>
+      </main>
+      <footer class="footer container">
+         <p class="footer-copy">© 2024, Alex Andreev</p>
+      </footer>
+      <!-- Calendly badge widget begin -->
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/andreevv-alex/meeting-with-alex-in-google-meet', text: 'Schedule time with Alex', color: '#1c1c1c', textColor: '#ffffff', branding: undefined }); }</script>
+      <!-- Calendly badge widget end -->
+   </body>
+</html>

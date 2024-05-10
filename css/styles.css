@@ -335,8 +335,13 @@ a {
 .project-cover {
 	width: 100%;
 	background-color: #eeeff1;
+	/* background-color: #e8edf6; */
     border-radius: 2rem;
     margin-bottom: 1.5rem;
+}
+
+.project-inner-wrapper {
+	padding: 0 0.5rem;
 }
 
 .articles-list {

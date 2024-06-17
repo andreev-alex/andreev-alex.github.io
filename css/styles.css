@@ -229,12 +229,13 @@ small {
 }
 
 .nav-item {
-	border-radius: var(--border-radius-small);
-	transition: color var(--animation);
+	border-radius: 10px;
+	transition: background-color var(--animation);
 }
 
 .nav-item:hover {
-	color: var(--color-ui-accent);
+	/* color: var(--color-ui-accent); */
+	background-color: rgba(32, 135, 238, 0.1);
 }
 
 .ic {
@@ -370,6 +371,11 @@ a {
 	background-color: #ffffff;
 	border-radius: 50%;
 	border: 1px solid #ebedf4;
+	transition: transform var(--animation);
+}
+
+.tool-item:hover {
+	transform: translateY(-5px);
 }
 
 .item-webflow,
@@ -471,7 +477,8 @@ a {
 }
 
 .project-cover:hover {
-	background-color: #efefef;
+	/* background-color: #efefef; */
+	background-color: rgba(32, 135, 238, 0.1);
 }
 
 .project-inner-wrapper {
@@ -486,8 +493,8 @@ a {
 
 .updates-list {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 0.5rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
 }
 
 .update-item {
@@ -509,7 +516,8 @@ a {
 }
 
 .update-card:hover {
-	background-color: #efefef;
+	/* background-color: #efefef; */
+	background-color: rgba(32, 135, 238, 0.1);
 }
 
 .update-card-title {
@@ -529,6 +537,10 @@ a {
 	-webkit-animation: spin 16s linear infinite;
 	-moz-animation: spin 16s linear infinite;
 	animation: spin 16s linear infinite;
+}
+
+.update-card-img:hover {
+	
 }
 
 .update-card-img-1 {
@@ -580,6 +592,11 @@ a {
 	width: 100%;
 	border-radius: 1rem;
 	background-color: white;
+	transition: transform var(--animation);
+}
+
+.update-card-img-big:hover {
+	transform: rotate(-2deg);
 }
 
 .update-card-content {
@@ -828,7 +845,8 @@ a {
 }
 
 .contacts a:hover {
-	background-color: #efefef;
+	/* background-color: #efefef; */
+	background-color: rgba(32, 135, 238, 0.1);
 }
 
 /* 

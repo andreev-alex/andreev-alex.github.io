@@ -845,7 +845,7 @@ a {
 	gap: 0.5rem;
 }
 
-.contacts a {
+.contact-link {
 	display: flex;
 	padding: 8px 13px 8px 13px;
 	background-color: #f9f9f9;
@@ -856,9 +856,52 @@ a {
 	transition: background-color var(--animation);
 }
 
-.contacts a:hover {
-	/* background-color: #efefef; */
+.contact-link:hover {
 	background-color: rgba(32, 135, 238, 0.1);
+}
+
+.contact-link-light {
+	background-color: #fff;
+}
+
+.values-section-title {
+	font-size: 26px;
+	margin-bottom: 1rem;
+}
+
+.value-title {
+	font-size: 20px;
+    font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.value-item {
+	display: flex;
+    /* height: 260px; */
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.values-section-description, .value-description {
+	font-size: 16px;
+	line-height: 1.4;
+	font-weight: 400;
+	max-width: 85ch;
+}
+
+.value-description {
+	color: var(--color-text-secondary);
+}
+
+.values-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	margin-top: 2rem;
 }
 
 /* 
@@ -992,6 +1035,10 @@ a {
 
 	.card-align-right {
 		align-items: flex-end;
+	}
+
+	.values-list {
+		grid-template-columns: 1fr;
 	}
 }
 

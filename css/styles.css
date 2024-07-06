@@ -379,7 +379,7 @@ a {
 }
 
 .item-webflow,
-.item-framer {
+.item-html {
 	margin-left: -8px;
 }
 
@@ -397,10 +397,17 @@ a {
 	background-position: center;
 }
 
-.item-framer {
+/* .item-framer {
 	background-image: url('../img/icons/ic-logo-framer.svg');
 	background-repeat: no-repeat;
 	background-size: 28px;
+	background-position: center;
+} */
+
+.item-html {
+	background-image: url('../img/icons/ic-logo-html.svg');
+	background-repeat: no-repeat;
+	background-size: 32px;
 	background-position: center;
 }
 

@@ -321,7 +321,7 @@ a {
 	gap: 2rem;
 	align-items: center;
     width: fit-content;
-	margin-top: 5rem;
+	margin-top: 10rem;
 	animation-name: animation-screens-floating;
 	overflow: hidden;
 	animation-duration: 120s;
@@ -1026,6 +1026,7 @@ a {
 	position: fixed;
 	width: 10rem;
 	height: 13rem;
+	/* border: 1px solid #ffffff05; */
 	border-radius: var(--border-radius);
 	transition: opacity var(--animation);
 	bottom: 10%;

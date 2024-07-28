@@ -510,7 +510,7 @@ a {
 	font-size: 50px;
 	line-height: 1.3;
 	font-weight: 600;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	margin-left: 1rem;
 }
 
@@ -608,15 +608,17 @@ a {
 	width: 100%;
 	align-items: center;
 	gap: 1rem;
-	/* background-color: #F9F9F9; */
 	background-color: #fff;
 	padding: 1rem;
 	border-radius: var(--border-radius);
 	transition: background-color var(--animation);
 }
 
+.navigation-card {
+	background-color: #F9F9F9;
+}
+
 .update-card:hover {
-	/* background-color: #efefef; */
 	background-color: rgba(32, 135, 238, 0.1);
 }
 
@@ -839,6 +841,7 @@ a {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 3rem;
 }
 
 .content-section-flat .section-title {
@@ -1224,10 +1227,6 @@ a {
 }
 
 @media only screen and (max-width: 576px) {
-
-	#values, #portfolio {
-		display: none;
-	}
 
 	
 	.highlights-list {

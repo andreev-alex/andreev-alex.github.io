@@ -174,6 +174,34 @@ small {
 	max-height: 100%;
 }
 
+.portfolio-project-video {
+	width: 100%;
+	max-height: 100%;
+	position: relative;
+}
+
+.project-video-sber {
+	top: 2rem;
+	mix-blend-mode: darken;
+}
+
+.project-video-qic-reads {
+	top: 2rem;
+    width: 90%;
+    left: 5%;
+}
+
+.project-video-policy-management {
+	top: 2rem;
+    width: 90%;
+    left: 5%;
+}
+
+.project-video-sync-brew {
+	top: 2rem;
+	mix-blend-mode: darken;
+}
+
 .portfolio-project-img-wrapper {
 	display: block;
 	width: 100%;
@@ -182,6 +210,7 @@ small {
 	border-radius: var(--border-radius-small);
 	margin-bottom: 1rem;
 	transition: background-color var(--animation);
+	overflow: hidden;
 }
 
 .portfolio-project-img-wrapper:hover {
@@ -1087,6 +1116,7 @@ a {
 	right: 3%;
 	cursor: pointer;
 	background-color: #1C1C1C;
+	z-index: 9;
 }
 
 .video:hover {
